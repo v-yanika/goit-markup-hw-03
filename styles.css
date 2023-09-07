@@ -31,7 +31,7 @@ body {
     background-color: var(--accent-text-color);
 }
 
-.section {
+.container {
     width: 1200px;
     margin: 0px auto;
     padding: 94px 15px;
@@ -41,6 +41,9 @@ body {
     padding: 0px;
 }
 
+img {
+    display: block;
+}
 
 /* Заголовки */
 .work-title,
@@ -55,19 +58,14 @@ body {
     margin-bottom: 50px;
 }
 
-.team-title {
-    margin-bottom: 50px;
-}
-
 .future-title {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-bottom: 10px;
-    width: 270px;
 }
 
+/* Списки */
 .work-list .work-item+.work-item {
     margin-left: 30px;
 }
@@ -83,7 +81,6 @@ body {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.48px;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -98,6 +95,18 @@ body {
     margin-left: 30px;
 }
 
+.future-list .future-item+.future-item {
+    margin-left: 30px;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
 
 /* Абзац */
 .future-text {
@@ -108,7 +117,6 @@ body {
     color: var(--text-color);
     font-style: normal;
     font-weight: 400;
-    margin-bottom: 114px;
 
 }
 
@@ -121,9 +129,7 @@ body {
     margin-bottom: 30px;
 }
 
-.future-list .future-item+.future-item {
-    margin-left: 30px;
-}
+
 
 
 /* Герой */
@@ -213,12 +219,7 @@ body {
     color: var(--accent-color);
 }
 
-.list {
-    display: flex;
-    list-style: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+
 
 /* Футер */
 .footer {
@@ -352,6 +353,8 @@ body {
 .section-team {
     color: #F5F4FA;
     text-align: center;
+    display: inline-block;
+    justify-content: center;
 }
 
 /* Контейнеры */
@@ -359,12 +362,12 @@ body {
 .box-nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    box-sizing: border-box;
     border-bottom: 1px solid #ECECEC;
 }
+
 
 .nav-menu {
     display: flex;
@@ -372,25 +375,18 @@ body {
 }
 
 .box-order {
-    width: 1200px;
+
     display: inline-block;
-    margin-top: 0px;
-    margin-bottom: 0px;
+
     padding-top: 200px;
     padding-bottom: 200px;
 }
 
 .box-future {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 0px;
 }
-
-.box-team {
-    display: inline-block;
-    width: 1200px;
-    padding: 94px 15px;
-    margin-left: auto;
-    margin-right: auto;
+.text-box{
+    margin: 30px 60px;
 }
 
 .box-footer {
