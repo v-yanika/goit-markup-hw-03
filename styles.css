@@ -136,7 +136,6 @@ img {
     font-size: 16px;
     line-height: normal;
     letter-spacing: 0.48px;
-    margin-bottom: 30px;
 }
 
 
@@ -147,9 +146,13 @@ img {
 .order {
     background-color: var(--background-color);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .order-title {
+    display: block;
+    align-content: center;
     width: 700px;
     font-size: 44px;
     line-height: 1.37;
@@ -193,8 +196,7 @@ img {
 
 .logo-footer {
     display: block;
-    margin: 0px 0px 20px 0px;
-    padding: 0px;
+    padding: 20px 0px;
     font-family: Raleway;
     font-size: 26px;
     letter-spacing: 0.78px;
@@ -243,17 +245,22 @@ img {
 /* Футер */
 .footer {
     background-color: var(--background-color);
+    padding: 60px 0px;
 }
 
 .footer-item {
+    display: block;
+}
+
+.footer-list .footer-item+.footer-item {
     margin-top: 9px;
 }
 
+
 .footer-list {
-    display: inline-block;
     list-style: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    display: block;
+    margin: 9px 0px 0px 0px;
 }
 
 .address-text {
@@ -370,9 +377,9 @@ img {
 }
 
 .section-team {
-    color: #F5F4FA;
+    background-color: #F5F4FA;
     text-align: center;
-    display: flex justify-content: center;
+    display: flex
 }
 
 /* Контейнеры */
@@ -391,26 +398,15 @@ img {
     align-items: center;
 }
 
-.box-order {
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
 
 .box-future {
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-bottom: 94px;
 }
 
 .text-box {
-    margin: 30px 60px;
+    padding: 30px 60px;
 }
 
-.box-footer {
-    display: block;
-    width: 1200px;
-    padding: 60px 15px;
-    margin: 0px auto;
-}
 
 .box-nav .list-item+.list-item {
     margin-left: 50px;
