@@ -196,7 +196,7 @@ img {
 
 .logo-footer {
     display: block;
-    padding: 20px 0px;
+    margin-bottom: 20px;
     font-family: Raleway;
     font-size: 26px;
     letter-spacing: 0.78px;
@@ -291,6 +291,7 @@ img {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    padding: 0px;
 
 }
 
@@ -335,8 +336,6 @@ img {
 
 
 .card-portfolio {
-    border: 1px solid #EEE;
-    background-color: var(--accent-text-color);
     width: 370px;
     flex-shrink: 0;
     margin-top: 30px;
@@ -344,7 +343,10 @@ img {
 }
 
 .card-content {
-    padding: 20px 24px;
+    padding: 20px 20px;
+    border: 1px solid #EEE;
+    border-top: none;
+    background-color: var(--accent-text-color);
 }
 
 /* .card-set .card-portfolio+.card-portfolio {
@@ -404,7 +406,7 @@ img {
 }
 
 .text-box {
-    padding: 30px 60px;
+    padding: 30px 30px;
 }
 
 
